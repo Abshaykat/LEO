@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "environment": "leo-windows-simulation",
+  "providers": [
+    "powershell",
+    "filesystem",
+    "process",
+    "window",
+    "keyboard",
+    "mouse",
+    "browser",
+    "office",
+    "pdf",
+    "screenshot"
+  ],
+  "security": {
+    "ownerApproval": true,
+    "parameterBinding": true,
+    "audit": true,
+    "postConditionVerification": true
+  }
+}
