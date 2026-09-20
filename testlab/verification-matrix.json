@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "stages": {
+    "stage1_portable": {
+      "requiresPc": false,
+      "goal": "Software-level deterministic verification"
+    },
+    "stage2_windows_simulation": {
+      "requiresPc": false,
+      "goal": "Verify Windows-facing execution contracts without a desktop"
+    },
+    "stage3_windows_vm": {
+      "requiresPc": false,
+      "goal": "Run real Windows integration tests in a disposable VM"
+    }
+  },
+  "rules": {
+    "approvalRequiredForConsequentialActions": true,
+    "agentsMayNotGrantAuthority": true,
+    "agentsMayNotEnableAutonomousExecution": true,
+    "simulationIsNotPhysicalVerification": true,
+    "skipIsNotPass": true
+  },
+  "hardwareOnly": [
+    "microphone",
+    "speaker",
+    "webcam",
+    "GPU acceleration",
+    "USB devices",
+    "printer",
+    "physical display/input"
+  ]
+}
